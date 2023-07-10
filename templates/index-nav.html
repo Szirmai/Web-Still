@@ -1,0 +1,47 @@
+<nav class="nav-phone">
+    <div class="nav-item">
+        <div class="items"><a href="#home">
+            <span class="material-symbols-outlined">home</span>
+            <p><a href="#home">Home</a></p></a>
+        </div>
+        <div class="items"><a href="#about">
+            <span class="material-symbols-outlined">store</span>
+            <p><a href="#about">About us</a></p></a>
+        </div>
+        <div class="items"><a href="#references">
+            <span class="material-symbols-outlined">dynamic_feed</span>
+            <p><a href="#references">Referencies</a></p></a>
+        </div>
+        <div class="items"><a href="{% url 'contact' %}">
+            <span class="material-symbols-outlined">contact_mail</span>
+            <p><a href="{% url 'contact' %}">Contact us</a></p></a>
+        </div>
+        <div class="items"><a href="#pricing">
+            <span class="material-symbols-outlined">card_travel</span>
+            <p><a href="#pricing">Pricing</a></p></a>
+        </div>
+    </div>
+    </div>
+    <div class="left">
+        <a href="{% url 'home' %}"><div class="logo">Web'<span>Still</span><b style="color: #ff3366">.</b></div></a>
+    </div>
+    
+</nav>
+
+<nav class="nav-desktop">
+    <div class="left">
+        <a href="{% url 'home' %}"><div class="logo">Web'<span>Still</span><b style="color: #ff3366">.</b></div></a>
+    </div>
+    <div class="middle">
+        <div><a href="#home">home</a></div>
+        <div><a href="#about">About us</a></div>
+        <div><a href="#references">references</a></div>
+        <div><a href="{% url 'contact' %}">Contact us</a></div>
+        <div><a href="#pricing">pricing</a></div>
+    </div>
+    <div class="right">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</nav>

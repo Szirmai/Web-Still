@@ -1,0 +1,47 @@
+<nav class="nav-phone">
+    <div class="nav-item">
+        <div class="items"><a href="{% url 'home' %}">
+            <span class="material-symbols-outlined">home</span>
+            <p><a href="{% url 'home' %}">Home</a></p></a>
+        </div>
+        <div class="items"><a href="{% url 'about' %}">
+            <span class="material-symbols-outlined">store</span>
+            <p><a href="{% url 'about' %}">About us</a></p></a>
+        </div>
+        <div class="items"><a href="{% url 'reference' %}">
+            <span class="material-symbols-outlined">dynamic_feed</span>
+            <p><a href="{% url 'reference' %}">Referencies</a></p></a>
+        </div>
+        <div class="items"><a href="{% url 'contact' %}">
+            <span class="material-symbols-outlined">contact_mail</span>
+            <p><a href="{% url 'contact' %}">Contact us</a></p></a>
+        </div>
+        <div class="items"><a href="{% url 'pricing' %}">
+            <span class="material-symbols-outlined">card_travel</span>
+            <p><a href="{% url 'pricing' %}">Pricing</a></p></a>
+        </div>
+    </div>
+    </div>
+    <div class="left">
+        <a href="{% url 'home' %}"><div class="logo">Web'<span>Still</span><b style="color: #ff3366">.</b></div></a>
+    </div>
+    
+</nav>
+
+<nav class="nav-desktop">
+    <div class="left">
+        <a href="{% url 'home' %}"><div class="logo">Web'<span>Still</span><b style="color: #ff3366">.</b></div></a>
+    </div>
+    <div class="middle">
+        <div><a href="{% url 'home' %}">home</a></div>
+        <div><a href="{% url 'about' %}">About us</a></div>
+        <div><a href="{% url 'reference' %}">references</a></div>
+        <div><a href="{% url 'contact' %}">Contact us</a></div>
+        <div><a href="{% url 'pricing' %}">pricing</a></div>
+    </div>
+    <div class="right">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</nav>

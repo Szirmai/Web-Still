@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Log-in here!</title>
+	<link rel="icon" href="{% static 'assets/pics/favicon.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'dash/style.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+<section class="log-section">
+<div class="log-wrapper">
+		<div class="log-card">
+			<div class="log-title">
+				<span class="material-symbols-outlined">pinch_zoom_out</span>
+				<h2>Log-in as admin!</h2>
+			</div>
+			<form method="POST">
+				{% csrf_token %}
+				<input type="text" name="username" placeholder="*Felhasználónév">
+				<input type="password" name="password" placeholder="*Jelszó">
+				<button>
+					<div class="f-row">
+						<span class="material-symbols-outlined btn">lock</span>
+						<h3>Log-in!</h3>
+					</div>
+				</button>
+			</form>			
+			<div class="log-info">
+			<h3>Why am I here? </h3>  <a href="{% url 'home' %}"> -Click here!</a>
+			<a align="center">{{form.errors}}</a>
+		</div>
+		</div>
+</div>
+</section>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+	</body>
+</html>

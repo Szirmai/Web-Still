@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Offer Request</title>
+    <link rel="icon" href="{% static 'assets/pics/favicon.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'dash/style.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+{% include 'dash/navbar.html' %}
+    	<main class="main">
+			{% for message in messages %}
+				<div class="row">
+					<div class="card-01">
+								<h1 align="center"><a>{{message}}</a></h1>
+					</div>
+				</div>
+			{% endfor %}
+			<div class="row">
+                <div class="card-02">
+                	<h2>Offer requests</h2>
+						<ul style="border-bottom: 1px solid #4b88a2">
+							<li><p>Customer's name: <a>{{offers.name}}</a></p></li>
+                            <li><p>Email: <a>{{offers.email}}</a></p></li>
+                            <li><p>Goal: <a>{{offers.goal}}</a></p></li>
+                            <li><p>Website type: <a>{{offers.WebsiteType}}</a></p></li>
+                            <li><p>SEO: <a>{{offers.pack1}}</a></p></li>
+                            <li><p>Design: <a>{{offers.pack2}}</a></p></li>
+                            <li><p>Analytics: <a>{{offers.pack3}}</a></p></li>
+                            <li><p>Editing surface: <a>{{offers.pack4}}</a></p></li>
+                            <br>
+                            <li><h3>E-commerence additionals <a></a></h3></li>
+                            <li><p>Pending system: <a>{{offers.pack12}}</a></p></li>
+                            <li><p>Cart: <a>{{offers.pack6}}</a></p></li>
+                            <li><p>Wish list: <a>{{offers.pack7}}</a></p></li>
+                            <li><p>Payment: <a>{{offers.pack8}}</a></p></li>
+                            <li><p>Registration form: <a>{{offers.pack9}}</a></p></li>
+                            <li><p>Profile page: <a>{{offers.pack10}}</a></p></li>
+                            <br>
+                            <li><p>Protection: <a>{{offers.pack11}}</a></p></li>
+
+                            <li><p>About the project: <a>{{offers.aboutproject}}</a></p></li>
+                            <li><p>Special wishes: <a>{{offers.SpecialWish}}</a></p></li>
+                            <li><p>Extra: <a>{{offers.extra}}</a></p></li>
+						</ul>
+                </div>
+            </div>
+            {% include 'dash/footer.html' %}
+		</main>
+</div>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web'dash</title>
+	<link rel="icon" href="{% static 'assets/pics/favicon.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'dash/style.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+{% include 'dash/navbar.html' %}
+    	<main class="main">
+            {% for message in messages %}
+				<div class="row">
+					<div class="card-01">
+								<h1 align="center"><a>{{message}}</a></h1>
+					</div>
+				</div>
+			{% endfor %}
+			<div class="row">
+                <div class="card-02">
+                	<h2>Offer requests</h2>
+					{% for offers in offers %}
+						<ul style="border-bottom: 1px solid #4b88a2">
+							<a href="{% url 'offer-reque' offers.created %}" align="center">
+								<li><p align="center"><a href="{% url 'offer-reque' offers.created %}" align="center">{{offers.name}}</a> | <a href="{% url 'offer-reque' offers.created %}" align="center">{{offers.email}}</a></p><p align="center">|<a href="{% url 'offer-reque' offers.created %}" align="center"> {{offers.created}}</a></p></li>
+							</a>
+						</ul>
+					{% endfor %}
+                </div>
+            </div>
+            {% include 'dash/footer.html' %}
+		</main>
+</div>
+	</body>
+</html>

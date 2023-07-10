@@ -1,0 +1,88 @@
+<nav>
+    <div class="top-nav">
+        <div class="float-left">
+            <div class="right">
+                <span class="material-symbols-outlined logo">travel_explore</span>
+                <h2><i>WEB' Dash</i></h2>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="responsive-nav">
+        <div>
+            <ul class="flex-row-ect">
+                <li class="tiny-text-flex"><a href="{% url 'dash-home' %}"><span class="material-symbols-outlined">grid_view</span></a>
+                    <small>Dash</small>
+                </li>
+                <li class="tiny-text-flex"><a href="{% url 'contact-us' %}"><span class="material-symbols-outlined">mark_email_unread</span></a>
+                    <small>Contact us</small>
+                </li>
+                <li class="tiny-text-flex"><a href="{% url 'offer-requests' %}"><span class="material-symbols-outlined">shopping_cart_checkout</span></a>
+                    <small>Offer requests</small>
+                </li>
+                <li class="tiny-text-flex"><a href="{% url 'manage' %}"><span class="material-symbols-outlined">folder_managed</span></a>
+                    <small>Manage</small>
+                </li>
+                <li class="tiny-text-flex"><a href="{% url 'customer' %}"><span class="material-symbols-outlined">group_add</span></a>
+                    <small>Customers</small>
+                </li>
+                <li class="tiny-text-flex"><a href="{% url 'logout' %}"><span class="material-symbols-outlined">logout</span></a>
+                    <small>Log out</small>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+<div class="grid">
+<section>
+    <div class="sidebar-side">
+        <ul class="sidebar-nav">
+
+            <li class="nav-item">
+                <a href="{% url 'dash-home' %}" class="nav-link">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h2 class="link-text">Dashboard</h2>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{% url 'offer-requests' %}" class="nav-link">
+                    <span class="material-symbols-outlined">shopping_cart_checkout</span>
+                    <h2 class="link-text">Offer requests</h2>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{% url 'contact-us' %}" class="nav-link">
+                    <span class="material-symbols-outlined">mark_email_unread</span>
+                    <h2 class="link-text">Contact us</h2>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{% url 'manage' %}" class="nav-link">
+                    <span class="material-symbols-outlined">folder_managed</span>
+                    <h2 class="link-text">Manage impressions</h2>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{% url 'customer' %}" class="nav-link">
+                    <span class="material-symbols-outlined">group_add</span>
+                    <h2 class="link-text">Customers</h2>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{% url 'logout' %}" class="nav-link">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h2 class="link-text">Log out</h2>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</section>
